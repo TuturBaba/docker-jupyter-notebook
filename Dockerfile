@@ -36,7 +36,7 @@ RUN conda install --yes \
     conda run -n ansible-kernel python -m ansible_kernel.install && \
     conda create -n octave-kernel --yes python=3.8 octave_kernel=0.36.0 bioblend galaxy-ie-helpers && \
     conda run -n octave-kernel python -m octave_kernel install --user && \
-    conda create -n rlang-kernel --yes r-base r-irkernel=1.3.2 r-xml rpy2 bioblend galaxy-ie-helpers \
+    conda create -n rlang-kernel --yes r-base=4.3.3 r-irkernel=1.3.2 r-xml rpy2=3.5.11 bioblend galaxy-ie-helpers \
     	    'r-caret' \
 	    'r-crayon' \
 	    'r-devtools' \
